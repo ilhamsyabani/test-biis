@@ -1,6 +1,4 @@
-Here is your Laravel project documentation with improved grammar and style:
 
----
 
 ## About Aplications
 
