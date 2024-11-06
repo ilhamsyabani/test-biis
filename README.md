@@ -1,37 +1,64 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Here is your Laravel project documentation with improved grammar and style:
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## About Aplications
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This project is a web application developed as a programming test for Biis Griya Nadi. It provides a basic interface for viewing and managing employee data. The main framework used is Laravel, and it incorporates the following features:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- [DataTables for displaying employee data](https://datatables.net/).
+- [Bootstrap File Input for uploading employee photos](https://plugins.krajee.com/file-input).
+- [Select2 for an enhanced select dropdown experience](https://select2.org/).
+- [Date Picker to simplify date input for users](https://www.daterangepicker.com/).
+- [Dropzone for easy file upload management](https://www.dropzone.dev/).
+- [Indoregion Package for accessing Indonesian cities and regions](https://github.com/azishapidin/indoregion).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Laravel provides an accessible, robust framework ideal for developing large-scale applications with ease and efficiency.
 
-## Learning Laravel
+## Installation Guide
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Follow these steps to clone and set up this Laravel project from GitHub:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. **Open Terminal or Command Prompt**: Access your system’s terminal.
+2. **Navigate to the Destination Directory**: Choose a directory where you'd like to store this Laravel project. Use `cd` to navigate to that directory. For example:
+   ```bash
+   cd /path/to/your/folder
+   ```
+3. **Clone the Repository**: Clone the repository from GitHub:
+   ```bash
+   git clone https://github.com/ilhamsyabani/test-biis.git
+   ```
+4. **Enter the Project Directory**: Move into the cloned project folder:
+   ```bash
+   cd test-biis
+   ```
+5. **Install Dependencies**: Run `composer install` to install project dependencies.
+6. **Set Up the Environment File**: Copy `.env.example` to create a new `.env` file, and configure it with your database and other necessary settings.
+7. **Generate the Application Key**: Use the following command to generate a unique application key:
+   ```bash
+   php artisan key:generate
+   ```
+8. **Migrate the Database**: Run the migrations to create necessary database tables:
+   ```bash
+   php artisan migrate --seed
+   ```
+9. **Seed Indonesian Locations Data**: Populate the database with city and province data:
+   ```bash
+   php artisan db:seed --class=IndoRegionProvinceSeeder
+   php artisan db:seed --class=IndoRegionRegencySeeder
+   ```
+10. **You're Ready!** The project is now installed and ready to use.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+You can now start developing or testing the application locally. Happy coding!
 
-## Laravel Sponsors
+## Login Guide
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+To access the application, use the following credentials:
+
+- **Username or Email**: `admin@domain.com`
+- **Password**: `password`
+
+---
 
 ### Premium Partners
 
@@ -51,16 +78,16 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Thank you for considering a contribution to the Laravel framework! You can find the contribution guidelines in the [Laravel documentation](https://laravel.com/docs/contributions).
 
 ## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+To maintain a welcoming environment for everyone, please review and follow the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+If you discover any security vulnerabilities in Laravel, please send an email to Taylor Otwell at [taylor@laravel.com](mailto:taylor@laravel.com). All vulnerabilities will be promptly addressed.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
