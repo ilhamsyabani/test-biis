@@ -51,8 +51,9 @@ You can now start developing or testing the application locally. Happy coding!
 
 ## Login Guide
 
-To access the application, use the following credentials:
+To access the application, use the following credentials and link:
 
+- **Apps Link**: `https://maiedugameyuk.web.id/`
 - **Username or Email**: `admin@domain.com`
 - **Password**: `password`
 
